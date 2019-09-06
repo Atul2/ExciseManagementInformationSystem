@@ -1,0 +1,257 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ExciseMIS.master.cs" Inherits="ExciseManagementInformationSystem.ExciseMIS" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/metisMenu.min.js"></script>
+
+    <!-- <script src="js/dataTables/dataTables.tableTools.min.js"></script>-->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/startmin.js"></script>
+    <!-- <script src="js/filter.js"></script>
+    <script src="js/ddtf.js"></script>-->
+
+    <script src="js/morris.min.js"></script>
+    <script src="js/raphael.min.js"></script>
+    <!-- dataTable Table Tools export to pdf JavaScript -->
+
+    <script src="js/dataTables/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables/dataTables.buttons.min.js"></script>
+    <script src="js/dataTables/buttons.flash.min.js"></script>
+    <script src="js/dataTables/jszip.min.js"></script>
+    <script src="js/dataTables/pdfmake.min.js"></script>
+    <script src="js/dataTables/vfs_fonts.js"></script>
+    <script src="js/dataTables/buttons.html5.min.js"></script>
+    <script src="js/dataTables/buttons.print.min.js"></script>
+    <script src="js/dataTables/dataTables.bootstrap.min.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- MetisMenu CSS -->
+    <link href="css/metisMenu.min.css" rel="stylesheet" />
+
+    <!-- Timeline CSS -->
+    <link href="css/timeline.css" rel="stylesheet" />
+
+    <link href="css/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="css/dataTables/dataTables.responsive.css" rel="stylesheet" />
+
+    <link href="css/dataTables/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="css/dataTables/dataTables.tableTools.min.css" rel="stylesheet" />
+    <link href="css/dataTables/buttons.dataTables.min.css" rel="stylesheet" />
+    <link href="css/filter.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/startmin.css" rel="stylesheet" />
+    <link href="css/AdminLTE.min.css" rel="stylesheet" />
+    <!-- Morris Charts CSS -->
+    <link href="css/morris.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/skin-black-light.min.css" rel="stylesheet" />
+    <link href="ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
+    <style type="text/css">
+        .main-header .navbar {
+            -webkit-transition: margin-left .3s ease-in-out;
+            -o-transition: margin-left .3s ease-in-out;
+            transition: margin-left .3s ease-in-out;
+            margin-bottom: 0;
+            margin-left: 0px;
+            border: none;
+            min-height: 50px;
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-black-light sidebar-mini">
+    
+            <div class="wrapper">
+                <!-- Main Header -->
+                <header class="main-header">
+
+
+
+                    <!-- Header Navbar -->
+                    <nav class="navbar navbar-static-top" role="navigation">
+                        <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                            <span class="sr-only">Toggle navigation</span>
+                        </a>
+
+                        &nbsp;&nbsp;
+                        <img src="images/cglogo.gif" style="width: 3%; height: 3%;" />
+                        <b>Excise Management Information System, Excise Department, Raipur,Chhattisgarh</b>
+                        <!-- Navbar Right Menu -->
+                        <div class="navbar-custom-menu">
+
+
+
+                            <ul class="nav navbar-nav">
+
+                                <li class="dropdown notifications-menu">
+                                    <!-- Menu toggle button -->
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="fa fa-user fa-fw"></i>
+                                        <asp:Label ID="Label1" runat="server" /><b class="caret"></b>
+
+                                    </a>
+                                    <ul class="dropdown-menu">
+
+                                        <li>
+                                            <!-- Inner Menu: contains the notifications -->
+                                            <ul class="menu">
+                                                <li>
+                                                    <!-- start notification -->
+                                                    <a href="ResetLog.aspx">
+                                                        <i class="fa fa-unlock-alt fa-fw"></i>Change Password
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <!-- start notification -->
+                                                    <a href="logout.aspx">
+                                                        <i class="fa fa-sign-out fa-fw"></i>Logout
+                                                    </a>
+                                                </li>
+                                                <!-- end notification -->
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <!-- Control Sidebar Toggle Button -->
+
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <!-- Left side column. contains the logo and sidebar -->
+                <aside class="main-sidebar">
+
+
+                    <section class="sidebar-menu">
+                        <!-- Sidebar Menu -->
+                        <ul class="sidebar-menu" data-widget="tree">
+                            <!-- Optionally, you can add icons to the links -->
+                            <li class="<%= SetCssClass("ExciseDashboard.aspx") %>">
+                                <a href="ExciseDashboard.aspx">
+                                    <i class="fa fa-dashboard"></i>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="<%= SetCssClass("TotalInvoice.aspx") %>">
+                                <a href="TotalInvoice.aspx">
+
+                                    <i class="fa fa-file-text"></i>
+                                    <span style="font-size: smaller;">Invoice Details</span>
+
+                                </a>
+                            </li>
+                            <li class="treeview">
+
+                                <a href="#">
+
+                                    <i class="fa fa-pie-chart"></i>
+                                    <span style="font-size: smaller;">Charts Report</span>
+                                    <span style="font-size: smaller;" class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+
+                                </a>
+
+                                <ul style="font-size: smaller;" class="treeview-menu">
+                                    <li class="<%= SetCssClass("WareHouseWiseDutyAmountChart.aspx") %>"><a href="WareHouseWiseDutyAmountChart.aspx">
+                                        <h6><i class="fa fa-circle-o"></i>&nbsp WareHouse(DutyAmount)</h6>
+                                    </a></li>
+                                    <li class="<%= SetCssClass("WareHouseWiseDispatchChart.aspx") %>"><a href="WareHouseWiseDispatchChart.aspx">
+                                        <h6><i class="fa fa-circle-o"></i>&nbsp WareHouse(Dispatch)</h6>
+                                    </a></li>
+                                    <li class="<%= SetCssClass("WareHouseWiseInvoiceChart.aspx") %>"><a href="WareHouseWiseInvoiceChart.aspx">
+                                        <h6><i class="fa fa-circle-o"></i>&nbsp WareHouse(Invoice)</h6>
+                                    </a></li>
+                                    <li class="<%= SetCssClass("SupplierWiseDispatchChart.aspx") %>"><a href="SupplierWiseDispatchChart.aspx">
+                                        <h6><i class="fa fa-circle-o"></i>&nbsp Supplier(Dispatch)</h6>
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li class="<%= SetCssClass("StockStatus.aspx") %>">
+                                <a href="StockStatus.aspx">
+
+                                    <i class="fa fa-line-chart"></i>
+                                    <span style="font-size: smaller;">Stock Status</span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- /.sidebar -->
+                </aside>
+
+                <!-- Content Wrapper. Contains page content -->
+                <div class="content-wrapper">
+                    <!-- Content Header (Page header) -->
+
+
+                    <!-- Main content -->
+                    <section class="content container-fluid">
+
+                        <asp:ContentPlaceHolder ID="head" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </section>
+                    <!-- /.content -->
+                </div>
+                <!-- /.content-wrapper -->
+
+                <!-- Main Footer -->
+                <footer class="main-footer">
+                    <!-- To the right -->
+                    <div class="pull-right hidden-xs">
+
+                        <div class="col-xs-9">
+                            <br />
+                            <p class="text-justify">
+                                All efforts have been made to make the information as accurate as possible. Department of Chhattisgarh Govt. or NIC, will not be responsible
+                for any damage caused by inaccuracy in the information available on this website.
+                            </p>
+                        </div>
+                        <div class="col-xs-3">
+                            <img src="images/nic1.png" /></div>
+
+                    </div>
+
+                    <!-- Default to the left -->
+                    <hr class="col-xs-12">
+                    <p class="text-center">Disclaimer: Site Designed,developed and hosted by National Informatics Centre (NIC),Chhatttisgarh,Raipur</p>
+                </footer>
+
+                <!-- Control Sidebar -->
+
+            </div>
+  
+    <!-- ./wrapper -->
+    <script src="js/adminlte.min.js"></script>
+</body>
+</html>
